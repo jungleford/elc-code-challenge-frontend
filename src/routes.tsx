@@ -36,21 +36,21 @@ const router = createBrowserRouter([
                 element: <Navigate to="/products" replace />, // Redirect to products page by default
             },
             {
-                path: '/products',
+                path: 'products',
                 element: <Products />,
                 loader: async () => fetchData(`${globals.API_PREFIX}/products`),
             },
             {
-                path: '/cart',
+                path: 'cart',
                 element: <Cart />,
             },
             {
-                path: '/orders',
+                path: 'orders',
                 element: <Orders />,
                 loader: async () => fetchData(`${globals.API_PREFIX}/orders`),
             },
             {
-                path: '/order/:id',
+                path: 'order/:id',
                 element: <Order />,
                 loader: async ({ params }) => fetchData(`${globals.API_PREFIX}/orders/${params.id}`),
             },
