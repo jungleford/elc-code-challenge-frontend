@@ -20,8 +20,14 @@ function App() {
                 setTitle('Order List');
                 break;
             case '/products':
-            default:
                 setTitle('Product Store');
+                break;
+            default:
+                if (path.startsWith('/order/')) {
+                    setTitle('Order Detail');
+                } else {
+                    setTitle('Product Store');
+                }
                 break;
         }
     }, [location]);
