@@ -1,0 +1,41 @@
+@import './global';
+
+.app {
+    width: 100dvw;
+    height: 100dvh;
+    @include flex-column;
+    overflow: hidden;
+}
+
+.app-header {
+    width: calc(100% - 1rem);
+    height: 10%;
+    @include flex-row-wide-middle;
+    padding: 0.5rem;
+
+    .app-title {
+        font-size: calc(1rem + 2vmin);
+    }
+
+    .app-nav {
+        @include flex-row-narrow-middle;
+
+        &-link {
+            font-size: calc(1rem + 2vmin);
+            text-decoration: none;
+            color: inherit;
+            padding: 0 0.5rem;
+
+            &.active {
+                border-bottom: 4px solid #9391CC;
+                margin-top: 4px;
+            }
+        }
+    }
+}
+
+.app-body {
+    width: calc(100% - 2rem);
+    height: 90%;
+    padding: 1rem;
+}

@@ -1,0 +1,38 @@
+@import '../../global';
+
+.table-view {
+    width: 40%;
+    @include in-middle;
+    display: table;
+
+    .in-middle {
+        @include flex-row-narrow-middle;
+    }
+
+    .table-head {
+        display: table-header-group;
+    }
+
+    .table-body {
+        display: table-row-group;
+        text-align: start;
+    }
+
+    .table-row {
+        display: table-row;
+
+        &.odd-row {
+            background-color: transparent;
+        }
+
+        &.even-row {
+            background-color: #8CBBDD;
+        }
+    }
+
+    .table-cell {
+        display: table-cell;
+        padding: 4px;
+        border: 1px solid white;
+    }
+}

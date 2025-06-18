@@ -1,0 +1,70 @@
+@import '../../global';
+
+.panel-view {
+    width: 800px;
+    height: 400px; // Same to the actual image height
+
+    @include in-middle;
+
+    @include flex-row-wide-middle;
+    gap: 1rem;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    padding: 0 1rem 0 0;
+    background-color: #777697;
+
+    .cart-empty {
+        margin: auto;
+    }
+
+    .product-image {
+        width: auto;
+        height: 400px; // Same to the actual image height
+        border-top-left-radius: 8px;
+        border-bottom-left-radius: 8px;
+    }
+
+    .product {
+        width: 400px;
+        @include flex-column-wide-middle;
+
+        &-name {
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin: 0.5rem 0;
+        }
+
+        &-stock {
+            font-size: 1rem;
+            font-style: oblique;
+            color: #aaa;
+            margin: 0.5rem 0;
+        }
+
+        &-price {
+            font-size: 1rem;
+            color: #eee;
+            margin: 0.5rem 0;
+        }
+    }
+
+    .cart-action {
+        @include flex-row-narrow-middle;
+        gap: 1rem;
+        margin: 0.5rem 0;
+
+        button[disabled] {
+            cursor: default;
+        }
+    }
+
+    .cart-message {
+        color: lightgreen;
+        margin: 0.5rem 0;
+
+        a {
+            color: blue;
+            cursor: pointer;
+        }
+    }
+}

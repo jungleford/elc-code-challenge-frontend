@@ -1,0 +1,60 @@
+// Place the panel in the center of the area
+@mixin in-middle {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+@mixin flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+@mixin flex-row-in-middle {
+    @include flex-row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+@mixin flex-row-wide-middle {
+    @include flex-row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+@mixin flex-row-narrow-middle {
+    @include flex-row;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+@mixin flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin flex-column-in-middle {
+    @include flex-column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+@mixin flex-column-wide-middle {
+    @include flex-column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+@mixin flex-column-narrow-middle {
+    @include flex-column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}

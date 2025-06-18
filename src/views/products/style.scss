@@ -1,0 +1,5 @@
+.grid-view {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 250px));
+    gap: 1rem;
+}

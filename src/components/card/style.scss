@@ -1,0 +1,44 @@
+@import '../../global';
+
+.card {
+    @include flex-column-wide-middle;
+    justify-content: start;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    padding: 0 0 1rem 0;
+    background-color: #5652A1;
+
+    &:hover {
+        box-shadow: 4px 4px 2px 1px rgba(255, 255, 255, 0.5);
+    }
+
+    &-image {
+        width: 250px;
+        height: auto;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+    }
+
+    &-title {
+        font-size: 1.2rem;
+        font-weight: bold;
+        margin: 0.5rem 0;
+    }
+
+    &-subtitle {
+        font-size: 1rem;
+        font-style: oblique;
+        color: #aaa;
+        margin: 0.5rem 0;
+
+        &.hightlight {
+            color: #f00;
+        }
+    }
+
+    &-content {
+        font-size: 1rem;
+        color: #eee;
+        margin: 0.5rem 0;
+    }
+}

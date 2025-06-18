@@ -1,0 +1,24 @@
+@import '../../global';
+
+.counter {
+    @include flex-row-narrow-middle;
+    gap: 2px;
+
+    button {
+        background-color: transparent;
+        color: #fff;
+        border: none;
+        border-radius: 0;
+        padding: 1px 8px;
+        cursor: pointer;
+
+        &:hover {
+            background-color: #444;
+        }
+    }
+
+    input {
+        width: 40px;
+        text-align: center;
+    }
+}
