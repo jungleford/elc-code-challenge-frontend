@@ -104,7 +104,7 @@ export function Cart() {
         navigate('/cart', { replace: true }); // use "replace" to prevent go to the previous page by clicking "BACK" from the browser
         //window.location.reload(); // refresh page by force, but not a good idea
         setProduct(null);
-    }
+    };
 
     const goToOrder = () => {
         // use "navigate" but not <Link>, to prevent autoset the localStorage by clicking "BACK" from browser

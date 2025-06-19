@@ -28,6 +28,12 @@
         width: 400px;
         @include flex-column-wide-middle;
 
+        .order-id {
+            font-size: 2rem;
+            font-weight: bold;
+            margin: 0.5rem 0;
+        }
+
         &-name {
             font-size: 1.2rem;
             font-weight: bold;
